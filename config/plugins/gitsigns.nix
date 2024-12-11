@@ -1,5 +1,5 @@
 {
-  plugins = {
+  plugins.gitsigns = {
     enable = true;
     settings = {
       signs = {
