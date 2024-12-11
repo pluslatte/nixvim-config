@@ -1,6 +1,7 @@
 {
   imports = [
     ./bufferline.nix
+    ./gitsigns.nix
     ./illuminate.nix
     ./lualine.nix
     ./neo-tree.nix
