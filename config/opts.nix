@@ -14,6 +14,7 @@
 
     cursorline = true;
     expandtab = true;
+    hlsearch = true;
     ignorecase = true;
     inccommand = "split";
     number = true;
