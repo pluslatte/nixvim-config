@@ -2,6 +2,9 @@
   plugins = {
     neo-tree = {
       enable = true;
+      window = {
+        width = 20;
+      };
     };
     web-devicons.enable = true;
   };
