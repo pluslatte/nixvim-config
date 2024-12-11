@@ -14,6 +14,11 @@
       surround = {};
 
       starter = {
+        items = {
+          "__unkeyed-1.recent_files" = {
+            __raw = "require('mini.starter').sections.recent_files(3, true)";
+          };
+        };
         header = ''
           ▗▄▄▄       ▗▄▄▄▄    ▄▄▄▖
           ▜███▙       ▜███▙  ▟███▛
