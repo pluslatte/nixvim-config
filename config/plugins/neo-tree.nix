@@ -3,7 +3,7 @@
     neo-tree = {
       enable = true;
       window = {
-        width = 20;
+        width = 24;
       };
     };
     web-devicons.enable = true;
