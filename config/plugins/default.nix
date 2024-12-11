@@ -5,6 +5,7 @@
     ./illuminate.nix
     ./lsp.nix
     ./lualine.nix
+    ./mini.nix
     ./neo-tree.nix
     ./nvim-autopairs.nix
     ./nvim-cmp.nix
