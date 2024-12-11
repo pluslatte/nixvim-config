@@ -11,7 +11,6 @@
       action = "<cmd>bd<CR>";
       options = {
         desc = "Close this buffer";
-        group = "Buffer";
       };
     }
     {
@@ -20,7 +19,6 @@
       action = "<cmd>BufferLineCyclePrev";
       options = {
         desc = "Select <- Buffer";
-        group = "Buffer";
       };
     }
     {
@@ -29,7 +27,6 @@
       action = "<cmd>BufferLineCycleNext";
       options = {
         desc = "Select -> Buffer";
-        group = "Buffer";
       };
     }
     {
