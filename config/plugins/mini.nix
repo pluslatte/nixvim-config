@@ -12,6 +12,10 @@
       bufremove = {};
 
       surround = {};
+
+      starter = {
+
+      };
     };
   };
 }
