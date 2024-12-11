@@ -7,6 +7,7 @@
     ./lualine.nix
     ./neo-tree.nix
     ./nvim-autopairs.nix
+    ./nvim-cmp.nix
     ./telescope.nix
     ./treesitter.nix
     ./which-key.nix
