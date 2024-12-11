@@ -1,6 +1,7 @@
 {
   imports = [
     ./bufferline.nix
+    ./conform.nix
     ./gitsigns.nix
     ./illuminate.nix
     ./lsp.nix

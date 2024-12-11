@@ -1,6 +1,7 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   extraPackages = with pkgs; [
-    nixfmt
+    nixfmt-rfc-style
     rustfmt
   ];
 
@@ -21,14 +22,14 @@
         end
       '';
       formatters_by_ft = {
-          nix = ["nixfmt" ];
-          rust = [ "rustfmt" ];
-          # Conform can also run multiple formatters sequentially
-          # python = [ "isort "black" ];
-          #
-          # You can use a sublist to tell conform to run *until* a formatter
-          # is found
-          # java
+        nix = [ "nixfmt" ];
+        rust = [ "rustfmt" ];
+        # Conform can also run multiple formatters sequentially
+        # python = [ "isort "black" ];
+        #
+        # You can use a sublist to tell conform to run *until* a formatter
+        # is found
+        # java
       };
     };
   };
