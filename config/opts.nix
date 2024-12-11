@@ -1,6 +1,7 @@
 {
   opts = {
     breakindent = true;
+
     clipboard = {
       providers = {
         wl-copy.enable = true; # For Wayland
@@ -10,10 +11,19 @@
       # Sync clipboard between OS and Neovim
       register = "unnamedplus";
     };
+
     expandtab = true;
     ignorecase = true;
     number = true;
     mouse = "a";
+
+    # Sets how neovim will display certain whitespace characters in the editor
+    #  See `:help 'list'`
+    #  See `:help 'listchars'`
+    list = true;
+    # "__raw" here means that this field is raw lua code
+    listchars.__raw = "{ tab = '» ', trail = '·', nbsp = '␣' }";
+
     shiftwidth = 2;
     showmode = false;
     signcolumn = "yes";
