@@ -26,6 +26,7 @@
     # "__raw" here means that this field is raw lua code
     listchars.__raw = "{ tab = '» ', trail = '·', nbsp = '␣' }";
 
+    scrolloff = 10;
     shiftwidth = 2;
     showmode = false;
     signcolumn = "yes";
