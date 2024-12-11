@@ -9,6 +9,8 @@
 
       animate = {};
 
+      bufremove = {};
+
       surround = {};
     };
   };
