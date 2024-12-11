@@ -12,8 +12,10 @@
       register = "unnamedplus";
     };
 
+    cursorline = true;
     expandtab = true;
     ignorecase = true;
+    inccommand = "split";
     number = true;
     mouse = "a";
 
