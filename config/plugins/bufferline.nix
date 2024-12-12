@@ -8,14 +8,14 @@
     {
       mode = "n";
       key = "<Leader>bc";
-      action = "<cmd>bd<CR>";
+      action = "<cmd>Neotree close<CR><cmd>bd<CR>";
       options = {
         desc = "Close this buffer";
       };
     }
     {
       mode = "n";
-      key = "<Leader>bh";
+      key = "<Leader>bh<CR>";
       action = "<cmd>BufferLineCyclePrev";
       options = {
         desc = "Select <- Buffer";
@@ -23,7 +23,7 @@
     }
     {
       mode = "n";
-      key = "<Leader>bl";
+      key = "<Leader>bl<CR>";
       action = "<cmd>BufferLineCycleNext";
       options = {
         desc = "Select -> Buffer";
@@ -31,7 +31,7 @@
     }
     {
       mode = "n";
-      key = "<Leader>ba";
+      key = "<Leader>ba<CR>";
       action = "<cmd>BufferLineCloseOthers";
       options = {
         desc = "Close all buffer except this";
