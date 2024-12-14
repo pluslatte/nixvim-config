@@ -6,6 +6,7 @@
     ./illuminate.nix
     ./lsp.nix
     ./lualine.nix
+    ./luasnip.nix
     ./mini.nix
     ./neo-tree.nix
     ./nvim-autopairs.nix
