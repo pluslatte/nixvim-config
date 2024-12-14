@@ -20,6 +20,11 @@
             action = "setloclist";
             desc = "Open diagnostic [Q]uickfix list";
           };
+          "<leader>hd" = {
+            #mode = "n";
+            action = "open_float";
+            desc = "[H]over [d]iagnostic";
+          };
         };
         extra = [
           # Jump to the definition of the word under your cusor.

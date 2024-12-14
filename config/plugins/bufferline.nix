@@ -16,7 +16,7 @@
     {
       mode = "n";
       key = "<Leader>bh<CR>";
-      action = "<cmd>BufferLineCyclePrev";
+      action = "<cmd>BufferLineCyclePrev<CR>";
       options = {
         desc = "Select <- Buffer";
       };
@@ -24,7 +24,7 @@
     {
       mode = "n";
       key = "<Leader>bl<CR>";
-      action = "<cmd>BufferLineCycleNext";
+      action = "<cmd>BufferLineCycleNext<CR>";
       options = {
         desc = "Select -> Buffer";
       };
@@ -32,7 +32,7 @@
     {
       mode = "n";
       key = "<Leader>ba<CR>";
-      action = "<cmd>BufferLineCloseOthers";
+      action = "<cmd>BufferLineCloseOthers<CR>";
       options = {
         desc = "Close all buffer except this";
       };
