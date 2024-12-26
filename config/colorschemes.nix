@@ -1,5 +1,13 @@
 {
   colorschemes = {
-    gruvbox.enable = true;
+    gruvbox = {
+      enable = true;
+    };
+  };
+
+  # Make transparent
+  highlightOverride = {
+    Normal.bg = "NONE";
+    Normal.ctermbg = "NONE";
   };
 }
