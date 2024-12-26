@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins = {
     treesitter = {
       enable = true;
@@ -23,6 +24,6 @@
         };
       };
     };
-    treesitter-context.enable = true;
+    # treesitter-context.enable = true;
   };
 }
