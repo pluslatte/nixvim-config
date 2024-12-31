@@ -13,6 +13,7 @@
     ./nvim-cmp.nix
     ./telescope.nix
     ./treesitter.nix
+    ./vim-css-color.nix
     ./which-key.nix
   ];
 }
