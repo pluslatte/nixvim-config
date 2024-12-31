@@ -1,7 +1,8 @@
 {
   colorschemes = {
-    gruvbox = {
+    rose-pine = {
       enable = true;
+      settings.styles.transparency = true;
     };
   };
 
