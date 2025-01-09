@@ -9,6 +9,8 @@
         lua
         nix
         markdown
+        markdown_inline
+        regex
         rust
         vim
         xml

@@ -9,6 +9,7 @@
     ./luasnip.nix
     ./mini.nix
     ./neo-tree.nix
+    ./noice.nix
     ./nvim-autopairs.nix
     ./nvim-cmp.nix
     ./telescope.nix

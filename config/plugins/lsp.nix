@@ -2,6 +2,7 @@
   plugins = {
     cmp-nvim-lsp.enable = true;
     fidget.enable = true;
+    lspkind.enable = true;
     lsp = {
       enable = true;
       servers = {
