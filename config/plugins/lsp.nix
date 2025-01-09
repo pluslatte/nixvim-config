@@ -11,6 +11,7 @@
           installCargo = true;
           installRustc = true;
         };
+        ts_ls.enable = true;
         nixd.enable = true;
       };
       keymaps = {
