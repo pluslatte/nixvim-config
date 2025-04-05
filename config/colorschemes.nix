@@ -1,9 +1,10 @@
 {
   colorschemes = {
-    rose-pine = {
-      enable = true;
-      settings.styles.transparency = true;
-    };
+    gruvbox.enable = true;
+    # rose-pine = {
+    #   enable = true;
+    #   settings.styles.transparency = true;
+    # };
   };
 
   # Make transparent
