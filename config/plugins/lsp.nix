@@ -15,12 +15,13 @@
 
   plugins = {
     cmp-nvim-lsp.enable = true;
-    # fidget.enable = true;
+    fidget.enable = true;
     lspkind.enable = true;
     lsp = {
       enable = true;
       servers = {
         clangd.enable = true;
+        emmet_ls.enable = true;
         rust_analyzer = {
           enable = true;
           installCargo = true;
