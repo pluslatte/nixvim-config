@@ -14,14 +14,20 @@
   '';
 
   plugins = {
+    # LSP support plugins.
     cmp-nvim-lsp.enable = true;
     fidget.enable = true;
     lspkind.enable = true;
+
+    # Actual LSP configs.
     lsp = {
       enable = true;
+
+      # Add language servers here.
       servers = {
         clangd.enable = true;
         emmet_ls.enable = true;
+        html.enable = true;
         rust_analyzer = {
           enable = true;
           installCargo = true;
@@ -30,6 +36,8 @@
         ts_ls.enable = true;
         nixd.enable = true;
       };
+
+      # Custom LSP related keymaps here.
       keymaps = {
         diagnostic = {
           "<leader>q" = {
