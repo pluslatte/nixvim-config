@@ -7,9 +7,10 @@
     # };
   };
 
-  # Make transparent
-  highlightOverride = {
-    Normal.bg = "NONE";
-    Normal.ctermbg = "NONE";
-  };
+  # Making transparency.
+  # I don't like it.
+  # highlightOverride = {
+  #   Normal.bg = "NONE";
+  #   Normal.ctermbg = "NONE";
+  # };
 }
