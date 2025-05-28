@@ -98,5 +98,14 @@
         desc = "Move focus to the upper window";
       };
     }
+    # Launch lazygit
+    {
+      mode = "n";
+      key = "<Leader>G";
+      action = "<cmd>:LazyGit<CR>";
+      options = {
+        desc = "Launch LazyGit";
+      };
+    }
   ];
 }
