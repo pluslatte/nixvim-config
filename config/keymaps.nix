@@ -23,6 +23,24 @@
         desc = "Exit terminal mode";
       };
     }
+    # Open terminal below
+    {
+      mode = "n";
+      key = "<Leader>th";
+      action = "<cmd>belowright split |terminal<CR>";
+      options = {
+        desc = "Launch terminal below";
+      };
+    }
+    # Open terminal right
+    {
+      mode = "n";
+      key = "<Leader>tv";
+      action = "<cmd>vs |terminal<CR>";
+      options = {
+        desc = "Launch terminal right";
+      };
+    }
     # Disable arrow keys in normal mode :)
     {
       mode = "n";

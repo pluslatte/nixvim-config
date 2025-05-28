@@ -7,6 +7,14 @@
   keymaps = [
     {
       mode = "n";
+      key = "<Leader>bC";
+      action = "<cmd>Neotree close<CR><cmd>bd!<CR>";
+      options = {
+        desc = "Force close this buffer";
+      };
+    }
+    {
+      mode = "n";
       key = "<Leader>bc";
       action = "<cmd>Neotree close<CR><cmd>bd<CR>";
       options = {
