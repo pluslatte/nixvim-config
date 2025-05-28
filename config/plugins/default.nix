@@ -4,6 +4,7 @@
     ./conform.nix
     ./gitsigns.nix
     ./illuminate.nix
+    ./lazygit.nix
     ./lsp.nix
     ./lualine.nix
     ./luasnip.nix
