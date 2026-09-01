@@ -1,17 +1,6 @@
 {
   opts = {
     breakindent = true;
-
-    clipboard = {
-      providers = {
-        wl-copy.enable = true; # For Wayland
-        xsel.enable = true; # For X11
-      };
-
-      # Sync clipboard between OS and Neovim
-      register = "unnamedplus";
-    };
-
     cursorline = true;
     expandtab = true;
     hlsearch = true;

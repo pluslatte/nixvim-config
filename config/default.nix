@@ -1,6 +1,7 @@
 {
   # Import all your configuration modules here
-  imports = [ 
+  imports = [
+    ./clipboard.nix
     ./colorschemes.nix
     ./globals.nix
     ./keymaps.nix
