@@ -13,6 +13,7 @@
     ./notify.nix
     ./nvim-autopairs.nix
     ./nvim-cmp.nix
+    ./scrollview.nix
     ./telescope.nix
     ./treesitter.nix
     ./vim-css-color.nix
