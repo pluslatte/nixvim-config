@@ -5,6 +5,11 @@
       enable = true;
       grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
         bash
+        c
+        cpp
+        css
+        html
+        javascript
         json
         lua
         nix
@@ -12,6 +17,9 @@
         markdown_inline
         regex
         rust
+        toml
+        tsx
+        typescript
         vim
         xml
         yaml

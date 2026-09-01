@@ -12,6 +12,7 @@
       # Add language servers here.
       servers = {
         clangd.enable = true;
+        cssls.enable = true;
         emmet_ls.enable = true;
         html.enable = true;
         rust_analyzer = {

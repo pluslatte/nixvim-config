@@ -3,6 +3,7 @@
   extraPackages = with pkgs; [
     nixfmt
     rustfmt
+    prettier
   ];
 
   plugins.conform-nvim = {
@@ -24,6 +25,13 @@
       formatters_by_ft = {
         nix = [ "nixfmt" ];
         rust = [ "rustfmt" ];
+        javascript = [ "prettier" ];
+        javascriptreact = [ "prettier" ];
+        typescript = [ "prettier" ];
+        typescriptreact = [ "prettier" ];
+        html = [ "prettier" ];
+        css = [ "prettier" ];
+        json = [ "prettier" ];
         # Conform can also run multiple formatters sequentially
         # python = [ "isort "black" ];
         #
