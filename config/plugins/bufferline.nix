@@ -1,13 +1,32 @@
 {
   plugins = {
-    bufferline.enable = true;
+    bufferline = {
+      enable = true;
+      settings.options = {
+        # mini.bufremove keeps the window layout intact, so neo-tree never
+        # ends up as the last window (which would quit nvim via
+        # close_if_last_window). wipeout (not delete): :bdelete leaves
+        # buffer-local autocmds behind, which breaks vim-css-color when the
+        # buffer number is reused (E121: b:css_color_pat).
+        close_command.__raw = ''
+          function(bufnr)
+            require("mini.bufremove").wipeout(bufnr, false)
+          end
+        '';
+        right_mouse_command.__raw = ''
+          function(bufnr)
+            require("mini.bufremove").wipeout(bufnr, false)
+          end
+        '';
+      };
+    };
   };
 
   keymaps = [
     {
       mode = "n";
       key = "<Leader>bC";
-      action = "<cmd>Neotree close<CR><cmd>bd!<CR>";
+      action.__raw = ''function() require("mini.bufremove").wipeout(0, true) end'';
       options = {
         desc = "Force close this buffer";
       };
@@ -15,7 +34,7 @@
     {
       mode = "n";
       key = "<Leader>bc";
-      action = "<cmd>Neotree close<CR><cmd>bd<CR>";
+      action.__raw = ''function() require("mini.bufremove").wipeout(0, false) end'';
       options = {
         desc = "Close this buffer";
       };
