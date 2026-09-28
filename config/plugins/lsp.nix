@@ -34,6 +34,7 @@
           installCargo = false;
           installRustc = false;
         };
+        tinymist.enable = true;
         ts_ls.enable = true;
         nixd.enable = true;
       };
