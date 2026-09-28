@@ -20,6 +20,7 @@
         toml
         tsx
         typescript
+        typst
         vim
         xml
         yaml
