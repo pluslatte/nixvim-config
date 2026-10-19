@@ -1,23 +1,10 @@
+{ lib, ... }:
+let
+  files = builtins.attrNames (builtins.readDir ./.);
+  nixFiles = builtins.filter (
+    name: name != "default.nix" && lib.hasSuffix ".nix" name
+  ) files;
+in
 {
-  imports = [
-    ./bufferline.nix
-    ./claudecode.nix
-    ./conform.nix
-    ./gitsigns.nix
-    ./illuminate.nix
-    ./lazygit.nix
-    ./lsp.nix
-    ./lualine.nix
-    ./luasnip.nix
-    ./mini.nix
-    ./neo-tree.nix
-    ./notify.nix
-    ./nvim-autopairs.nix
-    ./nvim-cmp.nix
-    ./scrollview.nix
-    ./telescope.nix
-    ./treesitter.nix
-    ./vim-css-color.nix
-    ./which-key.nix
-  ];
+  imports = map (name: ./. + "/${name}") nixFiles;
 }
