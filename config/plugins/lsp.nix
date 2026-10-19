@@ -15,20 +15,13 @@
           enable = true;
           cmd = [
             "clangd"
-            # ESP-IDF などのクロスコンパイル環境向け。
-            # このグロブにマッチするコンパイラ (例: riscv32-esp-elf-gcc,
-            # xtensa-esp32-elf-gcc) に clangd が直接問い合わせて、
-            # ツールチェーン組み込みの include パス (newlib 等) と
-            # ターゲットトリプルを取得する。これが無いとホストの
-            # glibc ヘッダにフォールバックして include 解決に失敗する。
-            # マッチしないコンパイラには問い合わせないので、
-            # 通常のホスト向けプロジェクトには影響しない。
-            "--query-driver=/**/*-esp-elf-gcc,/**/*-esp-elf-g++"
+            "--query-driver=/**/*-esp-elf-gcc,/**/*-esp-elf-g++" # ESP-IDF
           ];
         };
         cssls.enable = true;
         emmet_ls.enable = true;
         html.enable = true;
+        pyright.enable = true;
         rust_analyzer = {
           enable = true;
           installCargo = false;
