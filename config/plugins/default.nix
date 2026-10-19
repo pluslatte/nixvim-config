@@ -1,6 +1,7 @@
 {
   imports = [
     ./bufferline.nix
+    ./claudecode.nix
     ./conform.nix
     ./gitsigns.nix
     ./illuminate.nix
