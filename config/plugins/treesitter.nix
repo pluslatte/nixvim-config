@@ -15,6 +15,7 @@
         nix
         markdown
         markdown_inline
+        python
         regex
         rust
         toml
